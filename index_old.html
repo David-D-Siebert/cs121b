@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://byui-cse.github.io/cse121b-ww-course/week01/setup-github-pages.html -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSE 121B | Setup: GitHub Pages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./index_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./index_files/course.css">
+  <link rel="stylesheet" href="./index_files/ir-black.min.css">
+</head>
+
+<body style="" data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="">
+  <header>
+    <div class="page">
+      <h1>CSE 121B<span id="coursetitle">: JavaScript Language</span></h1>
+      <img src="./index_files/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course">Home</a></span>
+      <span class="active"><a href="https://byui-cse.github.io/cse121b-ww-course/week01">W1</a></span>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/week02">W2</a></span>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/week03">W3</a></span>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/week04">W4</a></span>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/week05">W5</a></span>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/week06">W6</a></span>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/week07">W7</a></span>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/resources">Resources</a></span>
+    </nav>
+    <h2>Setup: GitHub Pages</h2>
+    <h3>Overview</h3>
+    <p>In this course, you will be publishing to GitHub for assessment. Your public GitHub space is
+      rendered through a free service named <strong>GitHub Pages</strong>. Your peers, graders, and
+      the instructor will then be able to access your site for collaboration and feedback. You have
+      already established a GitHub account and installed git technology so that you can commit and
+      push/upload your work to your cse121b GitHub repository.</p>
+    <div class="callout info">"GitHub Pages is a static site hosting service designed to host your
+      personal, organization, or project pages directly from a GitHub repository" - <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" target="_blank"> docs.github.com</a>
+    </div>
+    <h3>Instructions</h3>
+    <h4 class="step">Create a Local Repository Folder and Add a Basic HTML Home Page</h4>
+    <ol>
+      <li>Add a new folder on your computer in your desired location named
+        "<strong>cse121b</strong>" (lower case, no spaces).</li>
+      <li>In Visual Studio Code, open that new cse121b folder using <strong>File -&gt; Open
+          Folder</strong>.
+      </li>
+      <li>Create a new file in that cse121b folder named <strong>index.html</strong>.</li>
+      <li>With the index.html file open in VS Code, type the snippet <code>html:5</code> into the
+        editor and click enter or tab to automatically generate a basic HTML5 document structure.
+      </li>
+      <pre><code class="html hljs language-xml">html:5</code></pre>
+      <div class="callout info">The automatically generated HTML markup should look something like
+        this:
+        <pre><code class="html hljs language-xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width,initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+      </div>
+      
+      <li>Change the <code>&lt;title&gt;</code> element text content from "Document" to
+        "<strong>Your Full Name | CSE 121B | BYU-Idaho</strong>"</li>
+      <li>Add that same text content in the title element to a first level heading element
+        <code>&lt;h1&gt;</code> within the <code>body</code> opening and closing tags.
+        <div class="callout info">
+          Note that you can just type <code>h1</code> and then click tab.<br> The opening and
+          closing element will be created automatically.
+        </div>
+      </li>
+      <li>Next, add your general location, e.g., <code>Bahia Blanca, Argentina</code>, as a second
+        level heading element <code>&lt;h2&gt;</code>.</li>
+      <li>Now, add a horizontal rule void (no closing tag necessary) element
+        <code>&lt;hr&gt;</code>.
+      </li>
+      <li>Save the file.</li>
+      <li>Right mouse click on the file name in the <strong>Explorer</strong> panel within VS Code.
+        Select <strong>Open with Live Server</strong>. This will automatically open your default
+        browser with a localhost rendering of the page.<div class="callout warning">If you do not
+          see this option in the context-specific menu that appears, then you need to revisit the <a href="https://byui-cse.github.io/cse121b-ww-course/week01/setup-visual-studio-code.html">setup instructions</a> for adding the <strong>Live
+            Server</strong> extension in VS Code.</div>
+      </li>
+    </ol>
+    <details>
+      <summary>Check Your Work</summary>
+      <pre><code class="html hljs language-xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width,initial-scale=1.0"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Antiona Francesca | CSE 121B | BYU-Idaho<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Antiona Francesca | CSE 121B | BYU-Idaho<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Bahia Blanca, Argentina<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+      <figure>
+        <img src="./index_files/index-screenshot-w01.png" alt="Example screenshot of basic page rendering." loading="lazy" width="360" style="border:1px solid #ccc;">
+        <figcaption>Example screenshot of basic page rendering in the browser.</figcaption>
+      </figure>
+    </details>
+    <h4 class="step">Publish the cse121b folder to GitHub</h4>
+    <ol>
+      <li>In VS Code, <strong>open your cse121b folder</strong> if it is not already open.
+        <div class="callout info">
+          The system may prompt you to trust the file source. Click <strong>Trust</strong> to
+          continue.
+        </div>
+      </li>
+      <li>Select the <strong>Source Control</strong> icon in VS Code's Activity Bar.
+        <div class="callout info">
+          By default, the <strong>Activity Bar</strong> is found on the left-hand side of the screen
+          and will have up to five icons. If the Activity Bar is not visible, click <strong>View -&gt;
+            Appearance -&gt; Activity Bar</strong> to turn it visible.
+        </div>
+        <figure><img src="./index_files/source_control_icon.png" alt="Source Control Icon in VS Code" loading="lazy" width="350">
+          <figcaption>Figure 1: Source Control Icon in VS Code's Activity Bar</figcaption>
+        </figure>
+      </li>
+      <li>Click the blue button that says <strong>Publish to GitHub</strong>. If you don't see this
+        button, make sure you have all other git repo folders closed.
+        <figure><img src="./index_files/publish_github_button.png" alt="Source Control Icon in VS Code" loading="lazy" width="350">
+          <figcaption>Figure 2: Publish to GitHub Button in the Source Control panel</figcaption>
+        </figure>
+      </li>
+      <li>Click <strong>Allow</strong> if you get a message saying "<em>The extension 'GitHub' wants
+          to sign in using GitHub.</em>"</li>
+      <li>If you are prompted for an authorization for Visual Studio Code to Access GitHub, click
+        <strong>Continue</strong>.
+      </li>
+      <li>If you are asked to allow the page to open "Visual Studio Code", click
+        <strong>Allow</strong>.
+      </li>
+      <li>You may also be asked to allow an extension to open this URI, click <strong>Open</strong>.
+      </li>
+      <li>VSCode will choose the folder you have open, the cse121b folder as the the repository and
+        give you the option to "Publish to GitHub public repository". Choose the one that says
+        <strong>"public"</strong>, not private. This will make a new public repository in our GitHub
+        account.
+        <figure><img src="./index_files/public_repo_option.png" alt="Publish to GitHub public repository" loading="lazy" width="350">
+          <figcaption>Figure 3: Publish to GitHub public repository</figcaption>
+        </figure>
+      </li>
+      <li>It will show a list of the files in the cse121b folder. They will be selected by default
+        so
+        just
+        click <strong>OK</strong> to include the files in the new repository.</li>
+      <li>You may get a prompt to "Authorize Git Credential Manager" here. Click
+        <strong>Authorize</strong>.
+      </li>
+      <li>If you get a message asking if you'd like to periodically run fetch you can say "Yes", but
+        it is not necessary.
+        <div class="callout info">
+          If you look at your GitHub account on github.com, a new repository named cse121b will be
+          there along with any files or folders that were in your local cse121b folder. This local
+          folder is now a repository and is connected to the remote repository on GitHub. This means
+          that it will be tracked for additions, deletions, and changes.
+        </div>
+      </li>
+    </ol>
+    <div class="callout info">
+      Demonstration: 🎦 <a href="https://youtu.be/mrGMxZkkIzg" target="_blank">Setting up VSCode to
+        push to a GitHub repository</a>.<br> <em>This example shows WDD 130 as the repository name,
+        however, that does not matter as the principles and procedures are the same.</em>
+    </div>
+    <h4 class="step">Enable GitHub Pages</h4>
+    <ol>
+      <li>Login to your <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        account if needed.</li>
+      <li>Open your <strong>cse121b</strong> repository.</li>
+      <li>Click <strong>⚙️ Settings</strong> in the repository menu.</li>
+      <li>Click <strong>Pages</strong> in the submenu that appears on the right of the settings
+        panel.</li>
+      <li>Under the <strong>Build and deployment</strong> section of GitHub Pages, select the
+        <strong>main</strong> branch. Leave the next pull down menu with the default value of
+        <strong>📁 / root</strong>.<br>
+        <div class="callout warning"><strong>IF</strong> your branch is named
+          <strong>master</strong> instead of main, that is OK. Select that branch named master.
+        </div>
+      </li>
+      <li>In the top section, a message should display something like <strong>"Your site is live at
+          https://<em>your-github-username</em>your-.githu-b.io/cse121b"</strong>. <div class="callout info">
+          <strong>https://<em>your-github-username</em>.github.io/cse121b</strong> is your base URL.
+          You can share it with others and they will be able to navigate to your published page and
+          it will render in their browser.
+        </div>
+      </li>
+      <li>That is all that needs to be done to enable GitHub Pages site publishing. After a few
+        minutes, <strong>test</strong> the URL in your browser.</li>
+    </ol>
+    <div class="callout info">
+      Demonstration: 🎦 <a href="https://youtu.be/_jzY3dryS5A" target="_blank">GitHub Pages
+        Setup</a>
+    </div>
+
+
+
+    <h3>Submission</h3>
+    <ol>
+      <li>After you have completed the work, return to I-Learn to submit your GitHub Pages URL which
+        will have the following format:
+        <pre><code class="text hljs language-plaintext">https://your-github-username.github.io/cse121b</code></pre>
+      </li>
+      <li>Test your submission by running the <a href="https://byui-cse.github.io/cse121b-ww-course/audit/audit-w01-page.html" target="_blank">Audit</a> tool.</li>
+      <li>If there are issues, fix the issues and republish (upload) your page.
+        <div class="callout warning">You do NOT need to resubmit the assignment in I-Learn unless you need to correct the URL to match the given structure.</div>
+      </li>
+    </ol>
+    <hr>
+    <nav>
+      <span><a href="https://byui-cse.github.io/cse121b-ww-course/week01/index.html">↪️ W1 Content</a></span>
+      <span><a href="https://byui.instructure.com/calendar">Back to 💫 I-Learn</a></span>
+    </nav>
+  </main>
+  <footer>
+    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script src="./index_files/highlight.min.js.download"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="./index_files/preventCodeSelect.js.download"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
